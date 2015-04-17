@@ -16,7 +16,7 @@
         PhoneGap Team
     </author>
     
-    <gap:platform name="ios" />
+    <gap:platform name="android" />
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -44,34 +44,10 @@
         Define a specific version of PhoneGap to build into your app.
         
     -->
-	<preference name="phonegap-version"       value="3.6.3" />
-	<preference name="iosPersistentFileLocation" value="Library" />
-	<preference name="AndroidPersistentFileLocation" value="Compatibility" />
-
+	
     <!-- Plugins -->
 
-    <!-- Core plugins -->
     
-    <gap:plugin name="org.apache.cordova.device" version="0.2.8" />
-    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
-    <gap:plugin name="org.apache.cordova.file" version="1.0.1" />
-    <gap:plugin name="org.apache.cordova.file-transfer" version="0.4.2" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
-    <gap:plugin name="org.apache.cordova.media" version="0.2.8" />
-    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
-	<gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
-
-    <!-- Third party plugins -->
-    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
-    <!--
-        <gap:plugin name="com.phonegap.plugins.barcodescanner" />
-    -->
-	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
-  <!--  <gap:plugin name="com.simplec.plugins.powermanagement" version="0.4.0" /> -->
-    <gap:plugin name="nl.x-services.plugins.insomnia" version="4.0.1" />
-    <gap:plugin name="io.github.pwlin.cordova.plugins.fileopener" version="1.0.1" />
-    <gap:plugin name="it.y3web.cordova.documentinteraction" version="0.2.3" />
-
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
@@ -110,9 +86,7 @@
     <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
 
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>100</string>
-    </gap:config-file>
+    
 
     <!--
         Define access to external domains.
@@ -121,10 +95,6 @@
         Otherwise, you can specify specific domains:
     -->
     <access origin="*"/>
-    <!--
-        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
-        <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
-        <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
-    -->
+    
 
 </widget>
