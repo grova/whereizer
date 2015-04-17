@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<!--
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.grova.whereizer"
@@ -9,7 +10,7 @@
     <name>Whereizer</name>
 
     <description>
-        Storcy Sync Application
+        Whereizer Application
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
@@ -18,29 +19,26 @@
     
     <gap:platform name="android" />
 
-    <!--
-        If you do not want any permissions to be added to your app, add the
-        following tag to your config.xml; you will still have the INTERNET
-        permission on your app, which PhoneGap requires.
-    -->
-    
-        
-    -->
-	
-    <!-- Plugins -->
-
-    
-    
-
-    
-
-    <!--
-        Define access to external domains.
-        <access />            - a blank access tag denies access to all external resources.
-        <access origin="*" /> - a wildcard access tag allows access to all external resource.
-        Otherwise, you can specify specific domains:
-    -->
+   
     <access origin="*"/>
     
 
+</widget>
+-->
+
+<widget id="com.grova.whereizer" 
+        version="0.0.1" 
+        xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
+    <name>Whereizer</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <cdv:platform name="android" />
+    <content src="index.html" />
+    <access origin="*" />
 </widget>
